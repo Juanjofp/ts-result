@@ -1,0 +1,35 @@
+{
+  "include": [
+    "./src/**/*.ts",
+    "./tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2015",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "lib": [
+      "ES2020",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+    }
+  }
+}
